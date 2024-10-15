@@ -1,5 +1,5 @@
 #import "@preview/great-theorems:0.1.0": *
-#import "@preview/heading-dependent-counters:0.1.0": *
+#import "@preview/headcount:0.1.0": *
 
 #set heading(numbering: "1.1")
 #show: great-theorems-init
