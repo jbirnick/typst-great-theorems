@@ -112,7 +112,7 @@ We now list and explain all possible arguments.
 - `counter` (default: `none`)
 
   If you want your `mathblock` to be counted, pass the counter here.
-  Accepts either a Typst-native [`counter`](https://typst.app/docs/reference/introspection/counter/) (which can be made to depend on the section with the [`headcount`](https://typst.app/universe/package/headcount/) package) or a `rich-counter`s from the [`rich-counters`](https://typst.app/universe/package/rich-counters/) package.
+  Accepts either a Typst-native [`counter`](https://typst.app/docs/reference/introspection/counter/) (which can be made to depend on the section with the [`headcount`](https://typst.app/universe/package/headcount/) package) or a `rich-counter` from the [`rich-counters`](https://typst.app/universe/package/rich-counters/) package.
   If you want multiple `mathblock` environments to share the same counter, just pass the same counter to all of them.
 
 - `numbering` (default: `"1.1"`)
