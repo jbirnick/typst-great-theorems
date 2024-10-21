@@ -76,15 +76,13 @@
 }
 
 #let great-theorems-init(body) = {
-  show figure.where(kind: "great-theorem-counted"): fig => {
-    set align(left)
-    fig.body
-  }
+  show figure.where(kind: "great-theorem-counted"): set align(start)
+  show figure.where(kind: "great-theorem-counted"): set block(breakable: true)
+  show figure.where(kind: "great-theorem-counted"): fig => fig.body
 
-  show figure.where(kind: "great-theorem-uncounted"): fig => {
-    set align(left)
-    fig.body
-  }
+  show figure.where(kind: "great-theorem-uncounted"): set align(start)
+  show figure.where(kind: "great-theorem-uncounted"): set block(breakable: true)
+  show figure.where(kind: "great-theorem-uncounted"): fig => fig.body
 
   show ref: it => {
     if it.element != none and it.element.func() == figure and it.element.kind == "great-theorem-counted" {
