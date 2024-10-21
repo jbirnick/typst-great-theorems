@@ -204,6 +204,22 @@ The constructed environment will have the following changes compared to an envir
   #show: great-theorems-init
   ```
 
+- _My theorems break across pages, how do I stop that behavior?_
+
+  You can pass `breakable: false` to `mathblock` to construct a non-breakable environment.
+
+- _I have a default style for all my theorems/lemmas/remarks/..., and I'm writing boilerplate when I construct theorem/lemma/remark environments._
+
+  You can essentially define your own defaults like this:
+  ```typ
+  #let my_mathblock = mathblock.with(fill: yellow, radius: 5pt, inset: 5pt)
+  
+  #let theorem = my_mathblock(...)
+  #let lemma = my_mathblock(...)
+  #let remark = my_mathblock(...)
+  ...
+  ```
+
 - _The documentation is too short or unclear... how do I do X?_
 
   Please just open an [issue on GitHub](https://github.com/jbirnick/typst-great-theorems/issues), and I will happily answer your question and extend the documentation!
