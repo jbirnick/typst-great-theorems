@@ -1,24 +1,24 @@
 #import "@preview/great-theorems:0.1.0": *
-#import "@preview/headcount:0.1.0": *
+#import "@preview/rich-counters:0.2.1": *
 
 #set heading(numbering: "1.1")
 #show: great-theorems-init
 
 #show link: text.with(fill: blue)
 
-#let mathcounter = counter("mathblocks")
-#show heading: reset-counter(mathcounter)
+#let mathcounter = rich-counter(
+  identifier: "mathblocks",
+  inherited_levels: 1
+)
 
 #let theorem = mathblock(
   blocktitle: "Theorem",
   counter: mathcounter,
-  numbering: dependent-numbering("1.1"),
 )
 
 #let lemma = mathblock(
   blocktitle: "Lemma",
   counter: mathcounter,
-  numbering: dependent-numbering("1.1")
 )
 
 #let remark = mathblock(

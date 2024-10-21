@@ -20,31 +20,31 @@ Features:
 
 ## Showcase
 
-In the following example we use [`headcount`](https://typst.app/universe/package/headcount/) to configure section-based counters.
-The cleaner (but also less performant) solution would be to use [`rich-counters`](https://typst.app/universe/package/rich-counters/).
+In the following example we use [`rich-counters`](https://typst.app/universe/package/rich-counters/) to configure section-based counters.
+You can also use [`headcount`](https://typst.app/universe/package/headcount/).
 
 ```typ
 #import "@preview/great-theorems:0.1.0": *
-#import "@preview/headcount:0.1.0": *
+#import "@preview/rich-counters:0.2.1": *
 
 #set heading(numbering: "1.1")
 #show: great-theorems-init
 
 #show link: text.with(fill: blue)
 
-#let mathcounter = counter("mathblocks")
-#show heading: reset-counter(mathcounter)
+#let mathcounter = rich-counter(
+  identifier: "mathblocks",
+  inherited_levels: 1
+)
 
 #let theorem = mathblock(
   blocktitle: "Theorem",
   counter: mathcounter,
-  numbering: dependent-numbering("1.1"),
 )
 
 #let lemma = mathblock(
   blocktitle: "Lemma",
   counter: mathcounter,
-  numbering: dependent-numbering("1.1")
 )
 
 #let remark = mathblock(
