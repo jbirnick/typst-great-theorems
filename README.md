@@ -141,9 +141,9 @@ We now list and explain all possible arguments.
   A function that will style/transform the body.
   For example, if you want your theorem contents to be displayed in oblique style, you could pass `text.with(style: "oblique")`.
 
-- arguments for the surrounding `block`[https://typst.app/docs/reference/layout/block/]
+- arguments for the surrounding (`block`)[https://typst.app/docs/reference/layout/block/]
 
-  The `mathblock`, as the name suggests, is surrounded by a `block`[https://typst.app/docs/reference/layout/block/], which can be styled to have a background color, stroke color, rounded corners, etc. .
+  The `mathblock`, as the name suggests, is surrounded by a (`block`)[https://typst.app/docs/reference/layout/block/], which can be styled to have a background color, stroke color, rounded corners, etc. .
   You can just pass all arguments that you could pass to a `block` also to `mathblock`, and it will be "passed through" the surrounding `block`.
   For example, you could write `#let theorem = mathblock(..., fill: yellow, inset: 5pt)`.
 
