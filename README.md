@@ -6,7 +6,7 @@
 This package allows you to make **theorem/proof/remark/...** blocks.
 
 Features:
-- supports advanced counters through both [`headcount`](https://typst.app/universe/package/headcount/) and [`rich-counters`](https://typst.app/universe/package/rich-counters/)
+- supports advanced counters through both [headcount](https://typst.app/universe/package/headcount/) and [rich-counters](https://typst.app/universe/package/rich-counters/)
 - easy adjustment of style:
   * change prefix
   * change how title is displayed
@@ -20,8 +20,8 @@ Features:
 
 ## Showcase
 
-In the following example we use [`rich-counters`](https://typst.app/universe/package/rich-counters/) to configure section-based counters.
-You can also use [`headcount`](https://typst.app/universe/package/headcount/).
+In the following example we use [rich-counters](https://typst.app/universe/package/rich-counters/) to configure section-based counters.
+You can also use [headcount](https://typst.app/universe/package/headcount/).
 
 ```typ
 #import "@preview/great-theorems:0.1.1": *
@@ -112,13 +112,14 @@ We now list and explain all possible arguments.
 - `counter` (default: `none`)
 
   If you want your `mathblock` to be counted, pass the counter here.
-  Accepts either a Typst-native [`counter`](https://typst.app/docs/reference/introspection/counter/) (which can be made to depend on the section with the [`headcount`](https://typst.app/universe/package/headcount/) package) or a `rich-counter` from the [`rich-counters`](https://typst.app/universe/package/rich-counters/) package.
+  Accepts either a Typst-native [`counter`](https://typst.app/docs/reference/introspection/counter/) (which can be made to depend on the section with the [headcount](https://typst.app/universe/package/headcount/) package) or a `rich-counter` from the [rich-counters](https://typst.app/universe/package/rich-counters/) package.
   If you want multiple `mathblock` environments to share the same counter, just pass the same counter to all of them.
 
 - `numbering` (default: `"1.1"`)
 
   The numbering style that should be used to display the counters.
-  **Note:** If you use the [`headcount`](https://typst.app/universe/package/headcount/) package for your counters, you have to pass the `dependent-numbering` here.
+
+  **Note:** If you use the [headcount](https://typst.app/universe/package/headcount/) package for your counters, you have to pass the `dependent-numbering` here.
 
 - `prefix` (default: contructed from `blocktitle`, bold style)
 
@@ -186,7 +187,7 @@ The constructed environment will have the following changes compared to an envir
 
 ## FAQ
 
-- _What is the difference to the `ctheorems` package?_
+- _What is the difference to the ctheorems package?_
 
   You can achieve pretty much the same results with both packages.
   One goal of `great-theorems` was to have a cleaner implementation, for example by separating the counter functionality from the theorem block functionality.
@@ -195,7 +196,7 @@ The constructed environment will have the following changes compared to an envir
 
 - _How to set up the counters the way I want?_
 
-  Please consult the documentation of [`headcount`](https://typst.app/universe/package/headcount/) and [`rich-counters`](https://typst.app/universe/package/rich-counters/) respectively, we support both packages as well as native [`counter`](https://typst.app/docs/reference/introspection/counter/)s.
+  Please consult the documentation of [headcount](https://typst.app/universe/package/headcount/) and [rich-counters](https://typst.app/universe/package/rich-counters/) respectively, we support both packages as well as native [`counter`](https://typst.app/docs/reference/introspection/counter/)s.
 
 - _My theorems are all center aligned?!_
 
