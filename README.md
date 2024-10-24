@@ -164,7 +164,7 @@ We now list and explain all possible arguments (apart from the body).
 ### `proofblock`
 
 Also a proof environment can be constructed with `mathblock`, for example:
-```
+```typ
 #let proof = mathblock(
   blocktitle: "Proof",
   prefix: [_Proof._],
