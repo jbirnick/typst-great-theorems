@@ -35,11 +35,11 @@
 
 #theorem[
   This is some theorem.
-] <mythm>
+]
 
 #theorem(number: "A")[
   This is a theorem with a custom number.
-]
+] <mythm>
 
 #lemma[
   This is a lemma. Maybe it's used to prove @mythm.
