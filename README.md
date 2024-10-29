@@ -15,6 +15,7 @@ Features:
   * change numbering style
   * configure _all_ parameters of the [`block`](https://typst.app/docs/reference/layout/block/), including background color, stroke color, rounded corners, inset, ...
 - can adjust style also on individual basis (e.g. to highlight main theorem)
+- can change number for individual theorems (e.g. "Theorem A")
 - works with labels/references
 - sane and smart defaults
 
