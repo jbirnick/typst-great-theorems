@@ -63,6 +63,10 @@ You can also use [headcount](https://typst.app/universe/package/headcount/).
   This is some theorem.
 ] <mythm>
 
+#theorem(number: "A")[
+  This is a theorem with a custom number.
+]
+
 #lemma[
   This is a lemma. Maybe it's used to prove @mythm.
 ]
@@ -155,6 +159,11 @@ We now list and explain all possible arguments (apart from the body).
 - `title` (default: `none`)
 
   This allows you to set a title for your theorem/lemma/..., which will be displayed according to `titlix`.
+
+- `number` (defaults to use the counter)
+
+  This is only settable when it's a counted environment. It allows you to change the number to arbitrary content, e.g. `#theorem(number: [A])[ ... ]` will display "**Theorem A.** ...".
+  Note that, if this is set, it will _not_ increase the counter, so you would have e.g. Theorem 2.3, then Theorem A, then Theorem 2.4.
 
 - all the arguments from `mathblock`, except `blocktitle` and `counter`
 
