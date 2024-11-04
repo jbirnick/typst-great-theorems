@@ -201,7 +201,6 @@ The constructed environment will have the following changes compared to an envir
 
   You can achieve pretty much the same results with both packages.
   One goal of `great-theorems` was to have a cleaner implementation, for example by separating the counter functionality from the theorem block functionality.
-  `ctheorems` also uses deprecated Typst functionality that will soon be removed.
   In the end, however, in comes down to personal preference, and `ctheorems` was certainly a big inspiration for this package!
 
 - _How to set up the counters the way I want?_
