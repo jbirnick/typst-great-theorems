@@ -61,5 +61,5 @@
 
 #remark[
   This is a remark.
-  The remark box has some custom styling applied.
+  The remark block has some custom styling applied.
 ]
