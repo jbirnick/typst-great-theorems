@@ -52,6 +52,7 @@
         #if title != none [#titlix(title)]
         #bodyfmt(body)
         #suffix
+        #parbreak()
       ]]
     }
   } else {
@@ -62,6 +63,7 @@
         #if title != none [#titlix(title)]
         #bodyfmt(body)
         #suffix
+        #parbreak()
       ]]
     }
   }
@@ -79,6 +81,7 @@
       #if of != none [#prefix_with_of(of)] else [#prefix]
       #bodyfmt(body)
       #suffix
+      #parbreak()
     ]]
   }
 }
