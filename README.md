@@ -107,7 +107,7 @@ This is important to make the blocks have the correct alignment and to display r
 
 The main constructor you will use is `mathblock`, which allows you to construct a theorem/proof/remark/... environment in exactly the way you like it.
 
-Please see the showcase above for on example on how to use it.
+Please see the showcase above for an example on how to use it.
 We now list and explain all possible arguments.
 
 - `blocktitle` (required)
