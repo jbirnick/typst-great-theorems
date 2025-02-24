@@ -25,7 +25,7 @@ In the following example we use [rich-counters](https://typst.app/universe/packa
 You can also use [headcount](https://typst.app/universe/package/headcount/).
 
 ```typ
-#import "@preview/great-theorems:0.1.1": *
+#import "@preview/great-theorems:0.1.2": *
 #import "@preview/rich-counters:0.2.1": *
 
 #set heading(numbering: "1.1")
